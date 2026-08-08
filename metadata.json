@@ -1,0 +1,6 @@
+{
+  "name": "Student Dropout Risk Prediction System",
+  "description": "An interactive full-stack student retention and dropout risk prediction dashboard for faculty, featuring real-time data science EDA, data cleaning simulation, predictive risk analysis, and personalized Gemini AI-generated academic interventions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
