@@ -1,346 +1,6 @@
 [
   {
-    "id": "233",
-    "studentId": "STU798",
-    "name": "JR",
-    "email": "JR@gmail.com",
-    "department": "Computer Science",
-    "academicYear": "Junior",
-    "attendance": 100,
-    "internalMarks": 100,
-    "cgpa": 10,
-    "householdIncome": 5000000,
-    "scholarship": false,
-    "scholarshipHistory": "None",
-    "engagement": "High",
-    "riskScore": 0,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T08:46:48.191Z",
-    "updatedAt": "2026-08-06T08:46:48.191Z"
-  },
-  {
-    "id": "232",
-    "studentId": "stu346",
-    "name": "sanjith",
-    "email": "san@cit",
-    "department": "Computer Science",
-    "academicYear": "Sophomore",
-    "attendance": 85,
-    "internalMarks": 55,
-    "cgpa": 7.1,
-    "householdIncome": 44250,
-    "scholarship": false,
-    "scholarshipHistory": "None",
-    "engagement": "High",
-    "riskScore": 25,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:57:52.063Z",
-    "updatedAt": "2026-08-06T04:57:52.063Z"
-  },
-  {
-    "id": "219",
-    "studentId": "STU_STEM_202",
-    "name": "STEM Student 2",
-    "email": "stu_stem_202@university.edu",
-    "department": "Electronics Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.173Z",
-    "updatedAt": "2026-08-06T04:55:16.173Z"
-  },
-  {
-    "id": "220",
-    "studentId": "STU_STEM_203",
-    "name": "STEM Student 3",
-    "email": "stu_stem_203@university.edu",
-    "department": "Computer Science",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.173Z",
-    "updatedAt": "2026-08-06T04:55:16.173Z"
-  },
-  {
-    "id": "221",
-    "studentId": "STU_STEM_204",
-    "name": "STEM Student 4",
-    "email": "stu_stem_204@university.edu",
-    "department": "Electrical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.173Z",
-    "updatedAt": "2026-08-06T04:55:16.173Z"
-  },
-  {
-    "id": "222",
-    "studentId": "STU_STEM_205",
-    "name": "STEM Student 5",
-    "email": "stu_stem_205@university.edu",
-    "department": "Mechanical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.173Z",
-    "updatedAt": "2026-08-06T04:55:16.173Z"
-  },
-  {
-    "id": "223",
-    "studentId": "STU_STEM_206",
-    "name": "STEM Student 6",
-    "email": "stu_stem_206@university.edu",
-    "department": "Electronics Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "224",
-    "studentId": "STU_STEM_207",
-    "name": "STEM Student 7",
-    "email": "stu_stem_207@university.edu",
-    "department": "Computer Science",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "225",
-    "studentId": "STU_STEM_208",
-    "name": "STEM Student 8",
-    "email": "stu_stem_208@university.edu",
-    "department": "Electrical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "226",
-    "studentId": "STU_STEM_209",
-    "name": "STEM Student 9",
-    "email": "stu_stem_209@university.edu",
-    "department": "Mechanical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "227",
-    "studentId": "STU_STEM_210",
-    "name": "STEM Student 10",
-    "email": "stu_stem_210@university.edu",
-    "department": "Electronics Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "228",
-    "studentId": "STU_STEM_211",
-    "name": "STEM Student 11",
-    "email": "stu_stem_211@university.edu",
-    "department": "Computer Science",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "229",
-    "studentId": "STU_STEM_212",
-    "name": "STEM Student 12",
-    "email": "stu_stem_212@university.edu",
-    "department": "Electrical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "230",
-    "studentId": "STU_STEM_213",
-    "name": "STEM Student 13",
-    "email": "stu_stem_213@university.edu",
-    "department": "Mechanical Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "231",
-    "studentId": "STU_STEM_214",
-    "name": "STEM Student 14",
-    "email": "stu_stem_214@university.edu",
-    "department": "Electronics Eng",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "232",
-    "studentId": "STU_STEM_215",
-    "name": "STEM Student 15",
-    "email": "stu_stem_215@university.edu",
-    "department": "Computer Science",
-    "academicYear": "Junior",
-    "attendance": 88,
-    "internalMarks": 82,
-    "cgpa": 8.5,
-    "householdIncome": 35000,
-    "scholarship": true,
-    "scholarshipHistory": "Partial",
-    "engagement": "High",
-    "riskScore": 12,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-08-06T04:55:16.174Z",
-    "updatedAt": "2026-08-06T04:55:16.174Z"
-  },
-  {
-    "id": "217",
-    "studentId": "stu124",
-    "name": "jaiharish",
-    "email": "jaiharish@didgamil.com",
-    "department": "Electronics Eng",
-    "academicYear": "Junior",
-    "attendance": 10,
-    "internalMarks": 40,
-    "cgpa": 5.98,
-    "householdIncome": 20000,
-    "scholarship": false,
-    "scholarshipHistory": "None",
-    "engagement": "Low",
-    "riskScore": 71,
-    "riskLevel": "High",
-    "status": "Risk of Dropout",
-    "createdAt": "2026-07-31T04:56:17.858Z",
-    "updatedAt": "2026-07-31T04:56:17.858Z"
-  },
-  {
-    "id": "202",
+    "id": "216",
     "studentId": "STU_HR_101",
     "name": "HighRisk Student 1",
     "email": "stu_hr_101@university.edu",
@@ -353,14 +13,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.911Z",
-    "updatedAt": "2026-07-30T08:18:11.911Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "203",
+    "id": "217",
     "studentId": "STU_HR_102",
     "name": "HighRisk Student 2",
     "email": "stu_hr_102@university.edu",
@@ -373,14 +33,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.911Z",
-    "updatedAt": "2026-07-30T08:18:11.911Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "204",
+    "id": "218",
     "studentId": "STU_HR_103",
     "name": "HighRisk Student 3",
     "email": "stu_hr_103@university.edu",
@@ -393,14 +53,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "205",
+    "id": "219",
     "studentId": "STU_HR_104",
     "name": "HighRisk Student 4",
     "email": "stu_hr_104@university.edu",
@@ -413,14 +73,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "206",
+    "id": "220",
     "studentId": "STU_HR_105",
     "name": "HighRisk Student 5",
     "email": "stu_hr_105@university.edu",
@@ -433,14 +93,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "207",
+    "id": "221",
     "studentId": "STU_HR_106",
     "name": "HighRisk Student 6",
     "email": "stu_hr_106@university.edu",
@@ -453,14 +113,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "208",
+    "id": "222",
     "studentId": "STU_HR_107",
     "name": "HighRisk Student 7",
     "email": "stu_hr_107@university.edu",
@@ -473,14 +133,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "209",
+    "id": "223",
     "studentId": "STU_HR_108",
     "name": "HighRisk Student 8",
     "email": "stu_hr_108@university.edu",
@@ -493,14 +153,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "210",
+    "id": "224",
     "studentId": "STU_HR_109",
     "name": "HighRisk Student 9",
     "email": "stu_hr_109@university.edu",
@@ -513,14 +173,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "211",
+    "id": "225",
     "studentId": "STU_HR_110",
     "name": "HighRisk Student 10",
     "email": "stu_hr_110@university.edu",
@@ -533,14 +193,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "212",
+    "id": "226",
     "studentId": "STU_HR_111",
     "name": "HighRisk Student 11",
     "email": "stu_hr_111@university.edu",
@@ -553,14 +213,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "213",
+    "id": "227",
     "studentId": "STU_HR_112",
     "name": "HighRisk Student 12",
     "email": "stu_hr_112@university.edu",
@@ -573,14 +233,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "214",
+    "id": "228",
     "studentId": "STU_HR_113",
     "name": "HighRisk Student 13",
     "email": "stu_hr_113@university.edu",
@@ -593,14 +253,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "215",
+    "id": "229",
     "studentId": "STU_HR_114",
     "name": "HighRisk Student 14",
     "email": "stu_hr_114@university.edu",
@@ -613,14 +273,14 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
-    "id": "216",
+    "id": "230",
     "studentId": "STU_HR_115",
     "name": "HighRisk Student 15",
     "email": "stu_hr_115@university.edu",
@@ -633,31 +293,311 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 60,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-30T08:18:11.912Z",
-    "updatedAt": "2026-07-30T08:18:11.912Z"
+    "riskScore": 72,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-10-03T11:25:30.607Z",
+    "updatedAt": "2026-10-03T11:25:30.607Z"
   },
   {
     "id": "201",
-    "studentId": "12345",
-    "name": "yoh",
-    "email": "yo@gmail.com",
-    "department": "Computer Science",
-    "academicYear": "Freshman",
-    "attendance": 8,
-    "internalMarks": 75,
-    "cgpa": 7.79,
-    "householdIncome": 350000,
+    "studentId": "STU_STEM_201",
+    "name": "STEM Student 1",
+    "email": "stu_stem_201@university.edu",
+    "department": "Mechanical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
     "scholarship": true,
     "scholarshipHistory": "Partial",
-    "engagement": "Medium",
-    "riskScore": 45,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-24T07:54:12.804Z",
-    "updatedAt": "2026-07-24T07:54:12.804Z"
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "202",
+    "studentId": "STU_STEM_202",
+    "name": "STEM Student 2",
+    "email": "stu_stem_202@university.edu",
+    "department": "Electronics Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "203",
+    "studentId": "STU_STEM_203",
+    "name": "STEM Student 3",
+    "email": "stu_stem_203@university.edu",
+    "department": "Computer Science",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "204",
+    "studentId": "STU_STEM_204",
+    "name": "STEM Student 4",
+    "email": "stu_stem_204@university.edu",
+    "department": "Electrical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "205",
+    "studentId": "STU_STEM_205",
+    "name": "STEM Student 5",
+    "email": "stu_stem_205@university.edu",
+    "department": "Mechanical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "206",
+    "studentId": "STU_STEM_206",
+    "name": "STEM Student 6",
+    "email": "stu_stem_206@university.edu",
+    "department": "Electronics Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "207",
+    "studentId": "STU_STEM_207",
+    "name": "STEM Student 7",
+    "email": "stu_stem_207@university.edu",
+    "department": "Computer Science",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "208",
+    "studentId": "STU_STEM_208",
+    "name": "STEM Student 8",
+    "email": "stu_stem_208@university.edu",
+    "department": "Electrical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "209",
+    "studentId": "STU_STEM_209",
+    "name": "STEM Student 9",
+    "email": "stu_stem_209@university.edu",
+    "department": "Mechanical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "210",
+    "studentId": "STU_STEM_210",
+    "name": "STEM Student 10",
+    "email": "stu_stem_210@university.edu",
+    "department": "Electronics Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "211",
+    "studentId": "STU_STEM_211",
+    "name": "STEM Student 11",
+    "email": "stu_stem_211@university.edu",
+    "department": "Computer Science",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "212",
+    "studentId": "STU_STEM_212",
+    "name": "STEM Student 12",
+    "email": "stu_stem_212@university.edu",
+    "department": "Electrical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "213",
+    "studentId": "STU_STEM_213",
+    "name": "STEM Student 13",
+    "email": "stu_stem_213@university.edu",
+    "department": "Mechanical Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "214",
+    "studentId": "STU_STEM_214",
+    "name": "STEM Student 14",
+    "email": "stu_stem_214@university.edu",
+    "department": "Electronics Eng",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
+  },
+  {
+    "id": "215",
+    "studentId": "STU_STEM_215",
+    "name": "STEM Student 15",
+    "email": "stu_stem_215@university.edu",
+    "department": "Computer Science",
+    "academicYear": "Junior",
+    "attendance": 88,
+    "internalMarks": 82,
+    "cgpa": 8.5,
+    "householdIncome": 35000,
+    "scholarship": true,
+    "scholarshipHistory": "Partial",
+    "engagement": "High",
+    "riskScore": 1,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-03T11:25:26.650Z",
+    "updatedAt": "2026-10-03T11:25:26.650Z"
   },
   {
     "id": "1",
@@ -673,11 +613,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 6,
+    "riskScore": 1,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.338Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-28T04:57:42.747Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "2",
@@ -693,11 +633,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 24,
+    "riskScore": 10,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-04T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-25T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "3",
@@ -713,11 +653,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 27,
+    "riskScore": 6,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-16T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-06T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "4",
@@ -733,11 +673,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 29,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-26T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-16T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "5",
@@ -753,11 +693,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 9,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-01T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-22T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "6",
@@ -773,11 +713,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 27,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-08T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-29T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "7",
@@ -793,11 +733,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 35,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-21T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 18,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-08-11T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "8",
@@ -813,11 +753,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 29,
+    "riskScore": 16,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-17T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-07T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "9",
@@ -833,11 +773,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 9,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-15T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-05T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "10",
@@ -853,11 +793,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 24,
+    "riskScore": 16,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-30T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-20T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "11",
@@ -873,11 +813,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 21,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-17T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-07T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "12",
@@ -893,11 +833,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-03T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-24T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "13",
@@ -913,11 +853,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 42,
+    "riskScore": 40,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-02T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-23T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "14",
@@ -933,11 +873,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 41,
+    "riskScore": 31,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-18T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-09T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "15",
@@ -953,11 +893,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 17,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-06T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-27T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "16",
@@ -973,11 +913,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 22,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-04T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-25T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "17",
@@ -993,11 +933,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Low",
-    "riskScore": 33,
+    "riskScore": 19,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-27T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-18T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "18",
@@ -1013,11 +953,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-13T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-03T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "19",
@@ -1033,11 +973,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 17,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-31T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-21T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.748Z"
   },
   {
     "id": "20",
@@ -1053,11 +993,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 26,
+    "riskScore": 12,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-28T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-18T04:57:42.748Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "21",
@@ -1073,11 +1013,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 39,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-24T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 17,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-15T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "22",
@@ -1093,11 +1033,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Low",
-    "riskScore": 33,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "23",
@@ -1113,11 +1053,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 11,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-23T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "24",
@@ -1133,11 +1073,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 29,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-30T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "25",
@@ -1153,11 +1093,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 43,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-20T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 48,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-10T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "26",
@@ -1173,11 +1113,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 6,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-04T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "27",
@@ -1193,11 +1133,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-18T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "28",
@@ -1213,11 +1153,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 5,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-12T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "29",
@@ -1233,11 +1173,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 22,
+    "riskScore": 12,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-07T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "30",
@@ -1253,11 +1193,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-18T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "31",
@@ -1273,11 +1213,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 17,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-01T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-22T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "32",
@@ -1293,11 +1233,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 13,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-04T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "33",
@@ -1313,11 +1253,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 54,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-09T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 59,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-30T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "34",
@@ -1333,11 +1273,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 30,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-25T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "35",
@@ -1353,11 +1293,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 36,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-07T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 23,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "36",
@@ -1373,11 +1313,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 20,
+    "riskScore": 10,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-09T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-30T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "37",
@@ -1393,11 +1333,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 25,
+    "riskScore": 10,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-04T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "38",
@@ -1413,11 +1353,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 6,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "39",
@@ -1433,11 +1373,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 29,
+    "riskScore": 13,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-23T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-14T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "40",
@@ -1453,11 +1393,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 56,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-22T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "riskScore": 54,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "41",
@@ -1473,11 +1413,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 48,
+    "riskScore": 42,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-07-13T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-03T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "42",
@@ -1493,11 +1433,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-14T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-04T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "43",
@@ -1513,11 +1453,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-10T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "44",
@@ -1533,11 +1473,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-20T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "45",
@@ -1553,11 +1493,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 48,
+    "riskScore": 40,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-05-29T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-19T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "46",
@@ -1573,11 +1513,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Medium",
-    "riskScore": 10,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-08T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-29T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "47",
@@ -1593,11 +1533,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-13T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-03T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "48",
@@ -1613,11 +1553,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 30,
+    "riskScore": 14,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-27T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-18T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "49",
@@ -1633,11 +1573,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 10,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-07T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "50",
@@ -1653,11 +1593,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Medium",
-    "riskScore": 19,
+    "riskScore": 1,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-15T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "51",
@@ -1673,11 +1613,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Low",
-    "riskScore": 32,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-21T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "52",
@@ -1693,11 +1633,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 31,
+    "riskScore": 15,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-29T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-19T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "53",
@@ -1713,11 +1653,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 21,
+    "riskScore": 3,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-18T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-07-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "54",
@@ -1733,11 +1673,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 13,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "55",
@@ -1753,11 +1693,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 5,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-18T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-08-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "56",
@@ -1773,11 +1713,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "High",
-    "riskScore": 21,
+    "riskScore": 5,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-28T07:49:55.339Z",
-    "updatedAt": "2026-07-24T07:49:55.339Z"
+    "createdAt": "2026-06-18T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "57",
@@ -1793,11 +1733,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 10,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-12T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "58",
@@ -1813,11 +1753,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 41,
+    "riskScore": 30,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-05-28T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-18T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "59",
@@ -1833,11 +1773,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 37,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-18T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 15,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "60",
@@ -1853,11 +1793,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 39,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 22,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "61",
@@ -1873,11 +1813,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 13,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-08T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-29T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "62",
@@ -1893,11 +1833,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 47,
+    "riskScore": 43,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "63",
@@ -1913,11 +1853,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Low",
-    "riskScore": 33,
+    "riskScore": 18,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "64",
@@ -1933,11 +1873,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 38,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-13T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 18,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-04T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "65",
@@ -1953,11 +1893,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 4,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "66",
@@ -1973,11 +1913,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 7,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-29T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-19T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "67",
@@ -1993,11 +1933,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 18,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "68",
@@ -2013,11 +1953,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 10,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-10T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "69",
@@ -2033,11 +1973,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 40,
+    "riskScore": 27,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "70",
@@ -2053,11 +1993,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 40,
+    "riskScore": 29,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "71",
@@ -2073,11 +2013,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 44,
+    "riskScore": 43,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-04T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "72",
@@ -2093,11 +2033,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 36,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 21,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-08-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "73",
@@ -2113,11 +2053,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "High",
-    "riskScore": 24,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-04T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "74",
@@ -2133,11 +2073,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 6,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-09T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-30T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "75",
@@ -2153,11 +2093,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 48,
+    "riskScore": 40,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-11T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "76",
@@ -2173,11 +2113,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 35,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 12,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "77",
@@ -2193,11 +2133,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 13,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "78",
@@ -2213,11 +2153,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "79",
@@ -2233,11 +2173,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 18,
+    "riskScore": 3,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "80",
@@ -2253,11 +2193,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 23,
+    "riskScore": 12,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-12T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "81",
@@ -2273,11 +2213,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "82",
@@ -2293,11 +2233,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 22,
+    "riskScore": 13,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-30T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "83",
@@ -2313,11 +2253,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 24,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-09T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-30T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "84",
@@ -2333,11 +2273,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "85",
@@ -2353,11 +2293,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-29T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "86",
@@ -2373,11 +2313,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "87",
@@ -2393,11 +2333,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "High",
-    "riskScore": 27,
+    "riskScore": 12,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-29T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-19T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "88",
@@ -2413,11 +2353,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-04T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "89",
@@ -2433,11 +2373,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 20,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-27T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "90",
@@ -2453,11 +2393,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "91",
@@ -2473,11 +2413,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 41,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 22,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-14T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "92",
@@ -2493,11 +2433,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 65,
+    "riskScore": 75,
     "riskLevel": "High",
     "status": "Risk of Dropout",
-    "createdAt": "2026-07-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "93",
@@ -2513,11 +2453,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 30,
+    "riskScore": 15,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-27T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "94",
@@ -2533,11 +2473,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 23,
+    "riskScore": 7,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-10T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "95",
@@ -2553,11 +2493,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "96",
@@ -2573,11 +2513,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 37,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 16,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "97",
@@ -2593,11 +2533,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 28,
+    "riskScore": 6,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-28T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-18T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "98",
@@ -2613,11 +2553,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 19,
+    "riskScore": 7,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "99",
@@ -2633,11 +2573,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 13,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-18T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "100",
@@ -2653,11 +2593,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 16,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-01T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "101",
@@ -2673,11 +2613,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-30T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "102",
@@ -2693,11 +2633,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Low",
-    "riskScore": 32,
+    "riskScore": 23,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-10T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "103",
@@ -2713,11 +2653,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 19,
+    "riskScore": 7,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "104",
@@ -2733,11 +2673,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 41,
+    "riskScore": 39,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-06T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-27T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "105",
@@ -2753,11 +2693,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 3,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "106",
@@ -2773,11 +2713,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 17,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-08T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-29T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "107",
@@ -2793,11 +2733,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-01T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "108",
@@ -2813,11 +2753,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 41,
+    "riskScore": 38,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-07-06T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-27T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "109",
@@ -2833,11 +2773,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 25,
+    "riskScore": 7,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "110",
@@ -2853,11 +2793,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 27,
+    "riskScore": 6,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-01T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "111",
@@ -2873,11 +2813,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 26,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-18T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "112",
@@ -2893,11 +2833,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 31,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "113",
@@ -2913,11 +2853,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 49,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-01T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 45,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-22T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "114",
@@ -2933,11 +2873,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 5,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "115",
@@ -2953,11 +2893,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "High",
-    "riskScore": 27,
+    "riskScore": 16,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "116",
@@ -2973,11 +2913,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Medium",
-    "riskScore": 13,
+    "riskScore": 1,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-22T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "117",
@@ -2993,11 +2933,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 32,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "118",
@@ -3013,11 +2953,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 33,
+    "riskScore": 22,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-22T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "119",
@@ -3033,11 +2973,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 20,
+    "riskScore": 5,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "120",
@@ -3053,11 +2993,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 26,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "121",
@@ -3073,11 +3013,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "High",
-    "riskScore": 28,
+    "riskScore": 10,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "122",
@@ -3093,11 +3033,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 5,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-19T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "123",
@@ -3113,11 +3053,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 32,
+    "riskScore": 14,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "124",
@@ -3133,11 +3073,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 4,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "125",
@@ -3153,11 +3093,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 26,
+    "riskScore": 10,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "126",
@@ -3173,11 +3113,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "127",
@@ -3193,11 +3133,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 33,
+    "riskScore": 14,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "128",
@@ -3213,11 +3153,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 35,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 23,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "129",
@@ -3233,11 +3173,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 41,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-08T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 24,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-29T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "130",
@@ -3253,11 +3193,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 25,
+    "riskScore": 5,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "131",
@@ -3273,11 +3213,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 34,
-    "riskLevel": "Low",
-    "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 27,
+    "riskLevel": "Medium",
+    "status": "Active",
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "132",
@@ -3293,11 +3233,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-30T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "133",
@@ -3313,11 +3253,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "134",
@@ -3333,11 +3273,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-22T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "135",
@@ -3353,11 +3293,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 48,
+    "riskScore": 33,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-05-31T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-21T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "136",
@@ -3373,11 +3313,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 25,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-12T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "137",
@@ -3393,11 +3333,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 45,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 50,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "138",
@@ -3413,11 +3353,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 2,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "139",
@@ -3433,11 +3373,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 50,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 45,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "140",
@@ -3453,11 +3393,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 59,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-22T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 58,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "141",
@@ -3473,11 +3413,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 36,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 15,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "142",
@@ -3493,11 +3433,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 27,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "143",
@@ -3513,11 +3453,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 32,
+    "riskScore": 18,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "144",
@@ -3533,11 +3473,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 7,
+    "riskScore": 1,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-25T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "145",
@@ -3553,11 +3493,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 54,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-18T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 56,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "146",
@@ -3573,11 +3513,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 24,
+    "riskScore": 6,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "147",
@@ -3593,11 +3533,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 38,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 19,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-08-07T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "148",
@@ -3613,11 +3553,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 3,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "149",
@@ -3633,11 +3573,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 55,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-13T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 56,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-03T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "150",
@@ -3653,11 +3593,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-02T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-23T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "151",
@@ -3673,11 +3613,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 22,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "152",
@@ -3693,11 +3633,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 17,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-28T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-19T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "153",
@@ -3713,11 +3653,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 17,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-01T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-22T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "154",
@@ -3733,11 +3673,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 45,
+    "riskScore": 40,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-07-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "155",
@@ -3753,11 +3693,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 9,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "156",
@@ -3773,11 +3713,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 3,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "157",
@@ -3793,11 +3733,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "Low",
-    "riskScore": 47,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 46,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "158",
@@ -3814,10 +3754,10 @@
     "scholarshipHistory": "Full Tuition",
     "engagement": "Low",
     "riskScore": 49,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-05-27T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-06-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "159",
@@ -3833,11 +3773,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "160",
@@ -3856,8 +3796,8 @@
     "riskScore": 39,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-05-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-16T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "161",
@@ -3873,11 +3813,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 16,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-13T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-03T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "162",
@@ -3893,11 +3833,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 28,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "163",
@@ -3913,11 +3853,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 9,
+    "riskScore": 1,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-01T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-22T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "164",
@@ -3933,11 +3873,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 15,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "165",
@@ -3953,11 +3893,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 22,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-18T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-09T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "166",
@@ -3973,11 +3913,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 20,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-02T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-23T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "167",
@@ -3993,11 +3933,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 21,
+    "riskScore": 6,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-10T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "168",
@@ -4013,11 +3953,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 34,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "169",
@@ -4033,11 +3973,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "170",
@@ -4053,11 +3993,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 12,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "171",
@@ -4073,11 +4013,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 37,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-24T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 22,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-15T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "172",
@@ -4093,11 +4033,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 10,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-04T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-25T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "173",
@@ -4113,11 +4053,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 15,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-31T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-21T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "174",
@@ -4133,11 +4073,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 48,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-05-30T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 45,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-06-20T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "175",
@@ -4153,11 +4093,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 59,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-17T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 67,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-08T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "176",
@@ -4173,11 +4113,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 7,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-26T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "177",
@@ -4193,11 +4133,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "178",
@@ -4213,11 +4153,11 @@
     "scholarship": true,
     "scholarshipHistory": "Full Tuition",
     "engagement": "Medium",
-    "riskScore": 33,
+    "riskScore": 20,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-07T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-28T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "179",
@@ -4233,11 +4173,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 37,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 20,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-07-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "180",
@@ -4253,11 +4193,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 53,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-07-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 46,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-08-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "181",
@@ -4273,11 +4213,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 52,
+    "riskScore": 43,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-07-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-04T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "182",
@@ -4293,11 +4233,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 30,
+    "riskScore": 8,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "183",
@@ -4313,11 +4253,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 15,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-27T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-17T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "184",
@@ -4333,11 +4273,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 22,
+    "riskScore": 9,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-02T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-23T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "185",
@@ -4353,11 +4293,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 24,
+    "riskScore": 13,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-05-25T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-15T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "186",
@@ -4374,10 +4314,10 @@
     "scholarshipHistory": "None",
     "engagement": "Low",
     "riskScore": 50,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-14T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-05T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "187",
@@ -4393,11 +4333,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 28,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-21T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-12T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "188",
@@ -4413,11 +4353,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 13,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-15T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "189",
@@ -4433,11 +4373,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Low",
-    "riskScore": 34,
+    "riskScore": 22,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "190",
@@ -4453,11 +4393,11 @@
     "scholarship": true,
     "scholarshipHistory": "Partial",
     "engagement": "High",
-    "riskScore": 19,
+    "riskScore": 12,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "191",
@@ -4473,11 +4413,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 8,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-16T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-06T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "192",
@@ -4493,11 +4433,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 54,
-    "riskLevel": "Medium",
-    "status": "Active",
-    "createdAt": "2026-06-20T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "riskScore": 55,
+    "riskLevel": "High",
+    "status": "Risk of Dropout",
+    "createdAt": "2026-07-11T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "193",
@@ -4513,11 +4453,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 14,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-10T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-31T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "194",
@@ -4533,11 +4473,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Low",
-    "riskScore": 52,
+    "riskScore": 40,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-06-27T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-18T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "195",
@@ -4553,11 +4493,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 16,
+    "riskScore": 4,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-02T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-23T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "196",
@@ -4573,11 +4513,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 6,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-14T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "197",
@@ -4593,11 +4533,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 7,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-12T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-02T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "198",
@@ -4613,11 +4553,11 @@
     "scholarship": true,
     "scholarshipHistory": "Need-based",
     "engagement": "Medium",
-    "riskScore": 41,
+    "riskScore": 35,
     "riskLevel": "Medium",
     "status": "Active",
-    "createdAt": "2026-07-23T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-08-13T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "199",
@@ -4633,11 +4573,11 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "Medium",
-    "riskScore": 33,
+    "riskScore": 17,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-07-03T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-07-24T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   },
   {
     "id": "200",
@@ -4653,10 +4593,10 @@
     "scholarship": false,
     "scholarshipHistory": "None",
     "engagement": "High",
-    "riskScore": 9,
+    "riskScore": 0,
     "riskLevel": "Low",
     "status": "Enrolled",
-    "createdAt": "2026-06-05T07:49:55.340Z",
-    "updatedAt": "2026-07-24T07:49:55.340Z"
+    "createdAt": "2026-06-26T04:57:42.749Z",
+    "updatedAt": "2026-08-14T04:57:42.749Z"
   }
 ]

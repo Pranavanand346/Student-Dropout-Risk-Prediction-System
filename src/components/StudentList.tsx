@@ -25,6 +25,7 @@ import {
 import { Student, RiskLevel, InterventionPlan } from "../types";
 import { motion, AnimatePresence } from "motion/react";
 import EditStudentModal from "./EditStudentModal";
+import RiskBreakdownCard from "./RiskBreakdownCard";
 
 interface StudentListProps {
   students: Student[];
@@ -47,6 +48,11 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [displayLimit, setDisplayLimit] = useState<number>(50);
+
+  useEffect(() => {
+    setDisplayLimit(50);
+  }, [searchTerm, selectedRisk, selectedDept]);
 
   // Set initial selected student
   useEffect(() => {
@@ -196,7 +202,7 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
               </thead>
               <tbody className="divide-y divide-[#4F3529] text-[#F9F3EB]">
                 {filteredStudents.length > 0 ? (
-                  filteredStudents.map((student) => {
+                  filteredStudents.slice(0, displayLimit).map((student) => {
                     const isSelected = selectedStudent?.id === student.id;
                     return (
                       <tr 
@@ -259,6 +265,21 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
               </tbody>
             </table>
           </div>
+
+          {/* Load More Pagination Footer */}
+          {filteredStudents.length > displayLimit && (
+            <div className="p-3 border-t border-[#4F3529] bg-[#1C120C] text-center flex items-center justify-between">
+              <span className="text-[11px] text-[#D5C3B5] font-mono">
+                Showing <strong className="text-amber-400">{displayLimit}</strong> of <strong className="text-[#F9F3EB]">{filteredStudents.length}</strong> students
+              </span>
+              <button
+                onClick={() => setDisplayLimit((prev) => prev + 50)}
+                className="px-3 py-1 bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold text-xs rounded-lg transition cursor-pointer font-mono"
+              >
+                Load More (+50)
+              </button>
+            </div>
+          )}
         </div>
 
       </div>
@@ -275,8 +296,8 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
               transition={{ duration: 0.2 }}
               className="p-5 bg-[#261912] border border-[#4F3529] backdrop-blur-xl rounded-2xl flex flex-col gap-5 sticky top-6 shadow-xl"
             >
-              {/* Selected Student Card Header */}
-              <div className="flex items-start justify-between border-b border-[#4F3529] pb-4">
+              {/* Selected Student Profile Header */}
+              <div className="flex items-center justify-between border-b border-[#4F3529] pb-3">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 bg-[#3E291F] border border-[#6A4939] text-amber-400 rounded-xl flex items-center justify-center font-bold text-sm uppercase shadow-sm">
                     {selectedStudent.name.split(" ").map(n => n[0]).join("")}
@@ -290,43 +311,37 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setEditingStudent(selectedStudent)}
-                    className="p-1.5 bg-[#34221A] hover:bg-[#422C24] text-amber-400 border border-[#4F3529] rounded-lg transition cursor-pointer"
+                    className="p-1.5 bg-[#34221A] hover:bg-[#422C24] text-amber-400 border border-[#4F3529] rounded-lg transition cursor-pointer flex items-center gap-1.5 text-xs font-semibold px-2.5"
                     title="Edit Record"
                   >
                     <Edit3 className="h-3.5 w-3.5" />
+                    <span>Edit Profile</span>
                   </button>
-                  <span className={`px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase font-mono ${getRiskBadgeStyle(selectedStudent.riskLevel)}`}>
-                    {selectedStudent.riskLevel} Risk ({selectedStudent.riskScore}%)
-                  </span>
                 </div>
               </div>
 
+              {/* Golden Risk Breakdown Component */}
+              <RiskBreakdownCard student={selectedStudent} />
+
               {/* Statistical Contributions Matrix */}
               <div>
-                <span className="text-[10px] font-extrabold text-amber-500 uppercase tracking-widest block mb-3 font-mono">Academic & Socioeconomic Vector Matrix</span>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[10px] font-extrabold text-amber-500 uppercase tracking-widest block font-mono">Academic & Socioeconomic Parameter Matrix</span>
+                  <span className="text-[9px] bg-amber-950/80 text-amber-300 border border-amber-800/60 px-2 py-0.5 rounded-md font-mono font-semibold">
+                    CGPA 40% | Att 20% | Marks 20% | Income 10% | Engagement 10%
+                  </span>
+                </div>
                 <div className="grid grid-cols-2 gap-3 text-xs">
                   
-                  {/* Attendance Factor */}
-                  <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
-                    <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
-                      <Clock className="h-3.5 w-3.5 text-amber-500" />
-                      Attendance Rate
-                    </span>
-                    <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">{selectedStudent.attendance}%</p>
-                    <div className="h-1 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
-                      <div 
-                        className={`h-full ${selectedStudent.attendance < 75 ? "bg-rose-500" : "bg-emerald-500"}`} 
-                        style={{ width: `${selectedStudent.attendance}%` }} 
-                      />
+                  {/* CGPA Factor (Primary Model Weight: 40%) */}
+                  <div className="p-3 bg-[#1C120C] border border-amber-500/30 rounded-xl space-y-1 relative overflow-hidden">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
+                        <BookOpen className="h-3.5 w-3.5 text-amber-500" />
+                        Cumulative GPA
+                      </span>
+                      <span className="text-[9px] font-mono text-amber-400 font-bold bg-amber-950 px-1.5 py-0.5 rounded border border-amber-800">40% Weight</span>
                     </div>
-                  </div>
-
-                  {/* CGPA Factor */}
-                  <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
-                    <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
-                      <BookOpen className="h-3.5 w-3.5 text-amber-500" />
-                      Cumulative GPA
-                    </span>
                     <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">{selectedStudent.cgpa} / 10</p>
                     <div className="h-1 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
                       <div 
@@ -336,12 +351,33 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
                     </div>
                   </div>
 
-                  {/* Continuous Assessments */}
+                  {/* Attendance Factor (Equal Weight: 20%) */}
                   <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
-                    <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
-                      <Activity className="h-3.5 w-3.5 text-amber-500" />
-                      Internal Marks
-                    </span>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
+                        <Clock className="h-3.5 w-3.5 text-amber-500" />
+                        Attendance Rate
+                      </span>
+                      <span className="text-[9px] font-mono text-stone-400 bg-[#261912] px-1.5 py-0.5 rounded border border-[#4F3529]">20% Weight</span>
+                    </div>
+                    <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">{selectedStudent.attendance}%</p>
+                    <div className="h-1 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
+                      <div 
+                        className={`h-full ${selectedStudent.attendance < 75 ? "bg-rose-500" : "bg-emerald-500"}`} 
+                        style={{ width: `${selectedStudent.attendance}%` }} 
+                      />
+                    </div>
+                  </div>
+
+                  {/* Continuous Assessments (Equal Weight: 20%) */}
+                  <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
+                        <Activity className="h-3.5 w-3.5 text-amber-500" />
+                        Internal Marks
+                      </span>
+                      <span className="text-[9px] font-mono text-stone-400 bg-[#261912] px-1.5 py-0.5 rounded border border-[#4F3529]">20% Weight</span>
+                    </div>
                     <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">{selectedStudent.internalMarks}%</p>
                     <div className="h-1 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
                       <div 
@@ -351,17 +387,38 @@ export default function StudentList({ students, onDeleteStudent, onUpdateStudent
                     </div>
                   </div>
 
-                  {/* Financial Bracket */}
+                  {/* Financial Bracket (Model Weight: 10%) */}
                   <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
-                    <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
-                      <DollarSign className="h-3.5 w-3.5 text-amber-500" />
-                      Household Income
-                    </span>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
+                        <DollarSign className="h-3.5 w-3.5 text-amber-500" />
+                        Household Income
+                      </span>
+                      <span className="text-[9px] font-mono text-stone-400 bg-[#261912] px-1.5 py-0.5 rounded border border-[#4F3529]">10% Weight</span>
+                    </div>
                     <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">${selectedStudent.householdIncome.toLocaleString()}</p>
                     <span className="text-[10px] text-[#D5C3B5] flex items-center gap-1 mt-1 font-mono">
                       <Award className="h-3 w-3 text-amber-500" />
                       {selectedStudent.scholarship ? `Grant: ${selectedStudent.scholarshipHistory}` : "No Active Grant"}
                     </span>
+                  </div>
+
+                  {/* Extracurricular Engagement (Model Weight: 10%) */}
+                  <div className="p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl space-y-1">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#D5C3B5] text-[11px] flex items-center gap-1 font-medium">
+                        <User className="h-3.5 w-3.5 text-amber-500" />
+                        Engagement
+                      </span>
+                      <span className="text-[9px] font-mono text-stone-400 bg-[#261912] px-1.5 py-0.5 rounded border border-[#4F3529]">10% Weight</span>
+                    </div>
+                    <p className="text-[#F9F3EB] font-bold text-base mt-1 font-mono">{selectedStudent.engagement}</p>
+                    <div className="h-1 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
+                      <div 
+                        className={`h-full ${selectedStudent.engagement === "Low" ? "bg-rose-500" : selectedStudent.engagement === "Medium" ? "bg-amber-500" : "bg-emerald-500"}`} 
+                        style={{ width: `${selectedStudent.engagement === "Low" ? 33 : selectedStudent.engagement === "Medium" ? 66 : 100}%` }} 
+                      />
+                    </div>
                   </div>
 
                 </div>

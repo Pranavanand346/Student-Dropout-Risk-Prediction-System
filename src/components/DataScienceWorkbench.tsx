@@ -36,7 +36,9 @@ import {
   Bar, 
   Legend 
 } from "recharts";
-import { EdaStats, DataCleaningLog, Student, CorrelationPoint } from "../types";
+import { EdaStats, DataCleaningLog, Student, CorrelationPoint, EngagementLevel } from "../types";
+import { calculateStudentRisk, getStudentRiskAnalysis } from "../data/mockStudents";
+import RiskBreakdownCard from "./RiskBreakdownCard";
 import { motion, AnimatePresence } from "motion/react";
 
 interface DataScienceWorkbenchProps {
@@ -73,27 +75,37 @@ export default function DataScienceWorkbench({
   const [simCgpa, setSimCgpa] = useState<number>(6.5);
   const [simMarks, setSimMarks] = useState<number>(65);
   const [simIncome, setSimIncome] = useState<number>(25000);
+  const [simEngagement, setSimEngagement] = useState<EngagementLevel>("Medium");
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Calculate simulated risk score live
-  const calculateSimulatedRisk = () => {
-    let risk = 50;
-    risk += (80 - simAttendance) * 0.45;
-    risk += (7.0 - simCgpa) * 6.5;
-    risk += (70 - simMarks) * 0.25;
-    if (simIncome < 20000) risk += 10;
-    else if (simIncome > 60000) risk -= 8;
-
-    const finalScore = Math.min(Math.max(Math.round(risk), 2), 98);
-    let level: "Low" | "Medium" | "High" = "Low";
-    if (finalScore >= 65) level = "High";
-    else if (finalScore >= 35) level = "Medium";
-
-    return { finalScore, level };
+  // Calculate simulated student profile & risk live using primary model
+  const simStudent: Student = {
+    id: "SIM000",
+    studentId: "SIM000",
+    name: "Simulated Student Profile",
+    email: "simulated@university.edu",
+    department: "Computer Science",
+    academicYear: "Sophomore",
+    attendance: simAttendance,
+    internalMarks: simMarks,
+    cgpa: simCgpa,
+    householdIncome: simIncome,
+    scholarship: false,
+    scholarshipHistory: "None",
+    engagement: simEngagement,
+    riskScore: 0,
+    riskLevel: "Low",
+    status: "Enrolled",
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
   };
 
-  const simResult = calculateSimulatedRisk();
+  const simAnalysis = getStudentRiskAnalysis(simStudent);
+  simStudent.riskScore = simAnalysis.riskScore;
+  simStudent.riskLevel = simAnalysis.riskLevel;
+  simStudent.status = simAnalysis.status;
+  const simResult = { finalScore: simAnalysis.riskScore, level: simAnalysis.riskLevel };
 
   // Compute correlation coordinate map
   const correlationData: CorrelationPoint[] = students.map((s) => ({
@@ -223,11 +235,11 @@ export default function DataScienceWorkbench({
     f1Score: 94.0,
     confusionMatrix: { truePositive: 42, falsePositive: 4, trueNegative: 148, falseNegative: 6 },
     featureWeights: [
-      { feature: "Attendance Rate", weight: 35, impact: "High Negative Impact" },
-      { feature: "Cumulative GPA", weight: 25, impact: "High Negative Impact" },
-      { feature: "Internal Marks", weight: 15, impact: "Moderate Impact" },
-      { feature: "Household Income", weight: 15, impact: "Moderate Impact" },
-      { feature: "Engagement", weight: 10, impact: "Low Impact" }
+      { feature: "Cumulative GPA", weight: 40, impact: "Highest Priority Weight (Primary Driver)" },
+      { feature: "Attendance Rate", weight: 20, impact: "Equal Major Weight (Attendance Penalty)" },
+      { feature: "Internal Marks", weight: 20, impact: "Equal Major Weight (Assessment Indicator)" },
+      { feature: "Household Income", weight: 10, impact: "Financial Weight (Socioeconomic Factor)" },
+      { feature: "Engagement", weight: 10, impact: "Co-curricular Weight (Campus Activity)" }
     ]
   };
 
@@ -457,6 +469,39 @@ export default function DataScienceWorkbench({
                 </div>
               </div>
             </div>
+
+            {/* MODEL PARAMETER IMPORTANCE MATRIX */}
+            <div className="mt-4 p-3 bg-[#1C120C] border border-amber-500/30 rounded-xl space-y-2 font-mono">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-extrabold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                  <Activity className="h-3.5 w-3.5 text-amber-500" />
+                  Parameter Importance & Feature Weights
+                </span>
+                <span className="text-[9px] bg-amber-950 text-amber-300 border border-amber-800 px-1.5 py-0.5 rounded font-bold">
+                  100% Total
+                </span>
+              </div>
+              <div className="space-y-2 mt-2">
+                {metrics.featureWeights.map((fw, idx) => (
+                  <div key={idx} className="space-y-1">
+                    <div className="flex justify-between text-[11px] text-[#F9F3EB]">
+                      <span className="font-medium flex items-center gap-1">
+                        {fw.feature}
+                        {fw.weight === 40 && <span className="text-[8px] bg-amber-500 text-stone-950 px-1 rounded font-bold uppercase font-sans">Primary</span>}
+                      </span>
+                      <span className="font-bold text-amber-400 font-mono">{fw.weight}%</span>
+                    </div>
+                    <div className="h-1.5 bg-[#261912] rounded-full overflow-hidden border border-[#4F3529]">
+                      <div 
+                        className={`h-full ${fw.weight === 40 ? "bg-amber-400 animate-pulse" : fw.weight === 20 ? "bg-amber-500" : "bg-amber-700"}`} 
+                        style={{ width: `${fw.weight}%` }} 
+                      />
+                    </div>
+                    <p className="text-[9px] text-[#A89282] font-sans truncate">{fw.impact}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="mt-4 pt-3 border-t border-[#4F3529] text-[10px] text-[#D5C3B5] font-mono flex items-center justify-between">
@@ -535,17 +580,35 @@ export default function DataScienceWorkbench({
                   className="w-full accent-amber-500 cursor-pointer bg-[#1C120C]"
                 />
               </div>
+
+              <div>
+                <div className="flex justify-between text-[#F9F3EB] mb-1 font-semibold">
+                  <span>Extracurricular Engagement:</span>
+                  <span className="text-amber-400 font-mono">{simEngagement}</span>
+                </div>
+                <div className="grid grid-cols-3 gap-2 mt-1">
+                  {(["Low", "Medium", "High"] as EngagementLevel[]).map((lvl) => (
+                    <button
+                      key={lvl}
+                      type="button"
+                      onClick={() => setSimEngagement(lvl)}
+                      className={`py-1 text-[11px] font-bold rounded-lg border transition-all cursor-pointer ${
+                        simEngagement === lvl 
+                          ? "bg-amber-500 text-stone-950 border-amber-500 shadow-sm" 
+                          : "bg-[#1C120C] text-[#D5C3B5] border-[#4F3529] hover:border-amber-500/50"
+                      }`}
+                    >
+                      {lvl}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="mt-4 p-4 bg-[#1C120C] border border-[#4F3529] rounded-xl flex items-center justify-between">
-            <div>
-              <p className="text-[10px] text-[#D5C3B5] font-mono uppercase font-bold">Simulated Predicted Risk</p>
-              <p className="text-2xl font-extrabold text-[#F9F3EB] font-mono mt-0.5">{simResult.finalScore}%</p>
-            </div>
-            <span className={`px-3 py-1 rounded-xl text-xs font-bold font-mono uppercase ${simResult.level === "High" ? "bg-rose-950 text-rose-300 border border-rose-800" : simResult.level === "Medium" ? "bg-amber-950 text-amber-300 border border-amber-800" : "bg-emerald-950 text-emerald-300 border border-emerald-800"}`}>
-              {simResult.level} Risk
-            </span>
+          {/* Live Simulator Risk Breakdown */}
+          <div className="mt-4">
+            <RiskBreakdownCard student={simStudent} />
           </div>
         </div>
 

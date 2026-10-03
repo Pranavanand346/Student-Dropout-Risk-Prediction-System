@@ -323,38 +323,47 @@ export default function DashboardStats({ stats, onNavigateToTab, students = [] }
           <div className="space-y-3 mt-4">
             <div>
               <div className="flex justify-between text-xs text-[#F9F3EB] font-semibold mb-1">
-                <span>Attendance Weight</span>
-                <span className="text-amber-400 font-bold font-mono">35%</span>
+                <span>Cumulative GPA (CGPA)</span>
+                <span className="text-amber-400 font-bold font-mono">40%</span>
               </div>
               <div className="h-1.5 bg-[#1C120C] rounded-full overflow-hidden border border-[#4F3529]">
-                <div className="h-full bg-amber-500 rounded-full" style={{ width: "35%" }} />
+                <div className="h-full bg-amber-500 rounded-full animate-pulse" style={{ width: "40%" }} />
               </div>
             </div>
             <div>
               <div className="flex justify-between text-xs text-[#F9F3EB] font-semibold mb-1">
-                <span>Cumulative GPA</span>
-                <span className="text-amber-400 font-bold font-mono">25%</span>
+                <span>Attendance Rate</span>
+                <span className="text-amber-400 font-bold font-mono">20%</span>
               </div>
               <div className="h-1.5 bg-[#1C120C] rounded-full overflow-hidden border border-[#4F3529]">
-                <div className="h-full bg-amber-500 rounded-full animate-pulse" style={{ width: "25%" }} />
+                <div className="h-full bg-amber-500 rounded-full" style={{ width: "20%" }} />
               </div>
             </div>
             <div>
               <div className="flex justify-between text-xs text-[#F9F3EB] font-semibold mb-1">
                 <span>Internal Marks / Continuous Assessments</span>
-                <span className="text-amber-400 font-bold font-mono">15%</span>
+                <span className="text-amber-400 font-bold font-mono">20%</span>
               </div>
               <div className="h-1.5 bg-[#1C120C] rounded-full overflow-hidden border border-[#4F3529]">
-                <div className="h-full bg-amber-600 rounded-full" style={{ width: "15%" }} />
+                <div className="h-full bg-amber-600 rounded-full" style={{ width: "20%" }} />
               </div>
             </div>
             <div>
               <div className="flex justify-between text-xs text-[#F9F3EB] font-semibold mb-1">
                 <span>Household Income & Financial Stress</span>
-                <span className="text-amber-400 font-bold font-mono">15%</span>
+                <span className="text-amber-400 font-bold font-mono">10%</span>
               </div>
               <div className="h-1.5 bg-[#1C120C] rounded-full overflow-hidden border border-[#4F3529]">
-                <div className="h-full bg-amber-700 rounded-full" style={{ width: "15%" }} />
+                <div className="h-full bg-amber-700 rounded-full" style={{ width: "10%" }} />
+              </div>
+            </div>
+            <div>
+              <div className="flex justify-between text-xs text-[#F9F3EB] font-semibold mb-1">
+                <span>Extracurricular Engagement</span>
+                <span className="text-amber-400 font-bold font-mono">10%</span>
+              </div>
+              <div className="h-1.5 bg-[#1C120C] rounded-full overflow-hidden border border-[#4F3529]">
+                <div className="h-full bg-amber-800 rounded-full" style={{ width: "10%" }} />
               </div>
             </div>
           </div>
