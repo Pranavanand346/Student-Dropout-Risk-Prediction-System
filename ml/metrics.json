@@ -1,32 +1,22 @@
 {
   "modelName": "RandomForestClassifier",
-  "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified Cross-Validation)",
+  "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified 80/20 Train-Test Split)",
+  "taskDescription": "Student Retention Risk-Category Prediction",
   "framework": "scikit-learn 1.9.0",
-  "trainedAt": "2026-10-25T14:05:49.670844",
-  "totalSamples": 231,
+  "evaluationScope": "Held-out Test Performance",
+  "trainedAt": "2026-10-25T14:49:48.489931",
+  "totalDatasetRecords": 231,
   "trainSamples": 184,
   "testSamples": 47,
-  "accuracy": 99.6,
-  "precision": 97.0,
+  "accuracy": 97.9,
+  "precision": 85.7,
   "recall": 100.0,
-  "f1Score": 98.5,
+  "f1Score": 92.3,
   "confusionMatrix": {
-    "truePositive": 32,
+    "truePositive": 6,
     "falsePositive": 1,
-    "trueNegative": 198,
+    "trueNegative": 40,
     "falseNegative": 0
-  },
-  "testMetrics": {
-    "accuracy": 97.9,
-    "precision": 85.7,
-    "recall": 100.0,
-    "f1Score": 92.3,
-    "confusionMatrix": {
-      "truePositive": 6,
-      "falsePositive": 1,
-      "trueNegative": 40,
-      "falseNegative": 0
-    }
   },
   "featureWeights": [
     {

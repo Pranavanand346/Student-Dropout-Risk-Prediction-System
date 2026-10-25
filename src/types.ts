@@ -71,6 +71,8 @@ export interface ModelMetrics {
   framework?: string;
   trainedAt?: string;
   testSamples?: number;
+  evaluationScope?: string;
+  taskDescription?: string;
 }
 
 export interface EdaStats {

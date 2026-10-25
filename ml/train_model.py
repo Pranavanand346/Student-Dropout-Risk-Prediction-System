@@ -81,29 +81,36 @@ def train_and_evaluate(db_path=DB_PATH):
     y_pred = pipeline.predict(X_test)
     y_proba = pipeline.predict_proba(X_test)
 
-    # Full Cohort Evaluation (aligned with active student dataset displayed in UI)
-    full_preds = pipeline.predict(X)
-    y_full_binary = (y == "High").astype(int)
-    y_full_pred_binary = (pd.Series(full_preds, index=y.index) == "High").astype(int)
-    
-    tn_full, fp_full, fn_full, tp_full = confusion_matrix(y_full_binary, y_full_pred_binary, labels=[0, 1]).ravel()
-    total_evaluated = int(tp_full + fp_full + tn_full + fn_full)
-
-    # Mathematical formulas derived strictly from the confusion matrix cells
-    accuracy = round(((tp_full + tn_full) / (total_evaluated or 1)) * 100, 1)
-    precision = round((tp_full / (tp_full + fp_full or 1)) * 100, 1)
-    recall = round((tp_full / (tp_full + fn_full or 1)) * 100, 1)
-    f1 = round((2 * precision * recall / (precision + recall or 1)), 1)
-
-    # Also compute 20% held-out test split metrics
+    # Convert the target labels to binary:
+    # High risk = 1, all other risk categories = 0
     y_test_binary = (y_test == "High").astype(int)
-    y_pred_binary = (pd.Series(y_pred, index=y_test.index) == "High").astype(int)
-    tn_test, fp_test, fn_test, tp_test = confusion_matrix(y_test_binary, y_pred_binary, labels=[0, 1]).ravel()
-    test_total = int(tp_test + fp_test + fn_test + tn_test)
-    test_acc = round(((tp_test + tn_test) / (test_total or 1)) * 100, 1)
-    test_prec = round((tp_test / (tp_test + fp_test or 1)) * 100, 1)
-    test_rec = round((tp_test / (tp_test + fn_test or 1)) * 100, 1)
-    test_f1 = round((2 * test_prec * test_rec / (test_prec + test_rec or 1)), 1)
+    y_pred_binary = (y_pred == "High").astype(int)
+
+    # Confusion matrix derived exclusively from held-out test predictions
+    tn, fp, fn, tp = confusion_matrix(
+        y_test_binary,
+        y_pred_binary,
+        labels=[0, 1]
+    ).ravel()
+
+    # Calculate metrics without intermediate rounding using scikit-learn functions
+    accuracy = accuracy_score(
+        y_test_binary, y_pred_binary
+    ) * 100
+
+    precision = precision_score(
+        y_test_binary, y_pred_binary, zero_division=0
+    ) * 100
+
+    recall = recall_score(
+        y_test_binary, y_pred_binary, zero_division=0
+    ) * 100
+
+    f1 = f1_score(
+        y_test_binary, y_pred_binary, zero_division=0
+    ) * 100
+
+    test_samples_count = len(y_test)
 
     # Extract Feature Importances from Random Forest
     rf_model = pipeline.named_steps["classifier"]
@@ -154,33 +161,23 @@ def train_and_evaluate(db_path=DB_PATH):
 
     metrics = {
         "modelName": "RandomForestClassifier",
-        "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified Cross-Validation)",
+        "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified 80/20 Train-Test Split)",
+        "taskDescription": "Student Retention Risk-Category Prediction",
         "framework": "scikit-learn 1.9.0",
+        "evaluationScope": "Held-out Test Performance",
         "trainedAt": pd.Timestamp.now().isoformat(),
-        "totalSamples": len(df),
+        "totalDatasetRecords": len(df),
         "trainSamples": len(X_train),
-        "testSamples": len(X_test),
-        "accuracy": accuracy,
-        "precision": precision,
-        "recall": recall,
-        "f1Score": f1,
+        "testSamples": len(y_test),
+        "accuracy": round(accuracy, 1),
+        "precision": round(precision, 1),
+        "recall": round(recall, 1),
+        "f1Score": round(f1, 1),
         "confusionMatrix": {
-            "truePositive": int(tp_full),
-            "falsePositive": int(fp_full),
-            "trueNegative": int(tn_full),
-            "falseNegative": int(fn_full)
-        },
-        "testMetrics": {
-            "accuracy": test_acc,
-            "precision": test_prec,
-            "recall": test_rec,
-            "f1Score": test_f1,
-            "confusionMatrix": {
-                "truePositive": int(tp_test),
-                "falsePositive": int(fp_test),
-                "trueNegative": int(tn_test),
-                "falseNegative": int(fn_test)
-            }
+            "truePositive": int(tp),
+            "falsePositive": int(fp),
+            "trueNegative": int(tn),
+            "falseNegative": int(fn)
         },
         "featureWeights": feature_weights
     }
@@ -193,7 +190,8 @@ def train_and_evaluate(db_path=DB_PATH):
 
     print(f"Model saved to {MODEL_PATH}")
     print(f"Metrics saved to {METRICS_PATH}")
-    print(f"Accuracy: {metrics['accuracy']}%, F1: {metrics['f1Score']}%")
+    print(f"Held-out Test Performance (N={test_samples_count}): Accuracy: {metrics['accuracy']}%, Precision: {metrics['precision']}%, Recall: {metrics['recall']}%, F1: {metrics['f1Score']}%")
+    print(f"Confusion Matrix (Test Split): TP={tp}, FP={fp}, FN={fn}, TN={tn}")
     return pipeline, metrics
 
 def predict_single(pipeline, student_dict):
