@@ -1,0 +1,61 @@
+{
+  "modelName": "RandomForestClassifier",
+  "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified Cross-Validation)",
+  "framework": "scikit-learn 1.9.0",
+  "trainedAt": "2026-10-25T13:04:15.510822",
+  "totalSamples": 230,
+  "trainSamples": 184,
+  "testSamples": 46,
+  "accuracy": 97.8,
+  "precision": 98.1,
+  "recall": 97.8,
+  "f1Score": 97.8,
+  "confusionMatrix": {
+    "truePositive": 6,
+    "falsePositive": 1,
+    "trueNegative": 39,
+    "falseNegative": 0
+  },
+  "featureWeights": [
+    {
+      "feature": "Attendance Rate",
+      "weight": 26.6,
+      "impact": "Learned Random Forest MDI Feature Importance (26.6%)"
+    },
+    {
+      "feature": "Cumulative GPA",
+      "weight": 22.1,
+      "impact": "Learned Random Forest MDI Feature Importance (22.1%)"
+    },
+    {
+      "feature": "Internal Marks",
+      "weight": 14.1,
+      "impact": "Learned Random Forest MDI Feature Importance (14.1%)"
+    },
+    {
+      "feature": "Engagement",
+      "weight": 12.8,
+      "impact": "Learned Random Forest MDI Feature Importance (12.8%)"
+    },
+    {
+      "feature": "Household Income",
+      "weight": 12.5,
+      "impact": "Learned Random Forest MDI Feature Importance (12.5%)"
+    },
+    {
+      "feature": "Department",
+      "weight": 7.7,
+      "impact": "Learned Random Forest MDI Feature Importance (7.7%)"
+    },
+    {
+      "feature": "Academic Year",
+      "weight": 2.4,
+      "impact": "Learned Random Forest MDI Feature Importance (2.4%)"
+    },
+    {
+      "feature": "Scholarship",
+      "weight": 1.7,
+      "impact": "Learned Random Forest MDI Feature Importance (1.7%)"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
+import "dotenv/config";
 import express from "express";
 import path from "path";
 import fs from "fs";
+import { spawn } from "child_process";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import { mockStudents, calculateStudentRisk, getUniqueStudentSuggestions, getParameterStressAnalysis, getStudentRiskAnalysis } from "./src/data/mockStudents";
@@ -8,11 +10,62 @@ import { Student, DataCleaningLog, EdaStats, RiskLevel } from "./src/types";
 
 // Setup filesystem paths
 const DB_PATH = path.join(process.cwd(), "src", "data", "students-db.json");
+const METRICS_PATH = path.join(process.cwd(), "ml", "metrics.json");
+const ML_SERVICE_URL = process.env.ML_SERVICE_URL || "http://127.0.0.1:5001";
 
 // Ensure the directory exists
 const dir = path.dirname(DB_PATH);
 if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir, { recursive: true });
+}
+
+// Background launcher to ensure Scikit-Learn ML service is online
+function ensureMlServiceRunning() {
+  fetch(`${ML_SERVICE_URL}/health`).catch(() => {
+    const pythonExe = "C:\\Users\\prana\\AppData\\Local\\Programs\\Python\\Python314\\python.exe";
+    const pyCmd = fs.existsSync(pythonExe) ? pythonExe : "py";
+    const serviceScript = path.join(process.cwd(), "ml", "service.py");
+    if (fs.existsSync(serviceScript)) {
+      console.log("[ML Engine] Spawning Scikit-Learn Python service on port 5001...");
+      const p = spawn(pyCmd, [serviceScript], {
+        detached: true,
+        stdio: "ignore",
+        windowsHide: true,
+      });
+      p.unref();
+    }
+  });
+}
+ensureMlServiceRunning();
+
+// Query ML service for prediction with automatic fallback
+async function predictRiskWithML(student: any) {
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 2000);
+    const resp = await fetch(`${ML_SERVICE_URL}/predict`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(student),
+      signal: controller.signal,
+    });
+    clearTimeout(timeout);
+    if (resp.ok) {
+      const data = await resp.json();
+      return {
+        riskScore: data.riskScore,
+        riskLevel: data.riskLevel,
+        status: data.status,
+        isMlGenerated: true,
+        modelName: data.modelName,
+        probabilities: data.probabilities,
+      };
+    }
+  } catch (err) {
+    // ML service offline, fallback smoothly
+  }
+  const fallback = calculateStudentRisk(student);
+  return { ...fallback, isMlGenerated: false, modelName: "Rule-Based Calibrated Model" };
 }
 
 // In-memory cache for fast response times (< 1ms)
@@ -76,7 +129,7 @@ function getGeminiClient(): GoogleGenAI {
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   app.use(express.json({ limit: "10mb" }));
   app.use(express.urlencoded({ limit: "10mb", extended: true }));
@@ -139,7 +192,7 @@ async function startServer() {
   });
 
   // POST add new student
-  app.post("/api/students", (req, res) => {
+  app.post("/api/students", async (req, res) => {
     try {
       const students = loadStudents();
       const rawData = req.body;
@@ -169,7 +222,7 @@ async function startServer() {
         engagement: rawData.engagement || "Medium",
       };
 
-      const { riskScore, riskLevel, status } = calculateStudentRisk(inputStudent);
+      const { riskScore, riskLevel, status, modelName } = await predictRiskWithML(inputStudent);
 
       const newStudent: Student = {
         ...inputStudent,
@@ -198,7 +251,7 @@ async function startServer() {
   });
 
   // PUT update student
-  app.put("/api/students/:id", (req, res) => {
+  app.put("/api/students/:id", async (req, res) => {
     try {
       const students = loadStudents();
       const index = students.findIndex((s) => s.id === req.params.id);
@@ -224,7 +277,7 @@ async function startServer() {
         engagement: rawData.engagement ?? current.engagement,
       };
 
-      const { riskScore, riskLevel, status } = calculateStudentRisk(inputStudent);
+      const { riskScore, riskLevel, status } = await predictRiskWithML(inputStudent);
 
       const updatedStudent: Student = {
         ...inputStudent,
@@ -361,19 +414,18 @@ async function startServer() {
       const recall = parseFloat(((truePositive / (truePositive + falseNegative || 1)) * 100).toFixed(1));
       const f1Score = parseFloat(((2 * precision * recall) / (precision + recall || 1)).toFixed(1));
 
-      const stats: EdaStats = {
-        totalStudents: total,
-        highRiskCount: highRisk,
-        mediumRiskCount: mediumRisk,
-        lowRiskCount: lowRisk,
-        averageAttendance: avgAttendance,
-        averageCgpa: avgCgpa,
-        averageMarks: avgMarks,
-        correlationAttendanceRisk: correlationAttendance,
-        correlationCgpaRisk: correlationCgpa,
-        incomeRiskDistribution,
-        departmentRiskDistribution,
-        modelMetrics: {
+      // Load trained Scikit-Learn Model Metrics if available
+      let modelMetrics = null;
+      if (fs.existsSync(METRICS_PATH)) {
+        try {
+          modelMetrics = JSON.parse(fs.readFileSync(METRICS_PATH, "utf8"));
+        } catch (e) {
+          console.error("Error reading ML metrics file:", e);
+        }
+      }
+
+      if (!modelMetrics) {
+        modelMetrics = {
           accuracy,
           precision,
           recall,
@@ -391,12 +443,64 @@ async function startServer() {
             { feature: "Household Income & Aid", weight: 10, impact: "Financial Weight (Annual family income vulnerability factor)" },
             { feature: "Extracurricular Engagement", weight: 10, impact: "Co-curricular Weight (Campus engagement & connectivity)" }
           ]
-        }
+        };
+      }
+
+      const stats: EdaStats = {
+        totalStudents: total,
+        highRiskCount: highRisk,
+        mediumRiskCount: mediumRisk,
+        lowRiskCount: lowRisk,
+        averageAttendance: avgAttendance,
+        averageCgpa: avgCgpa,
+        averageMarks: avgMarks,
+        correlationAttendanceRisk: correlationAttendance,
+        correlationCgpaRisk: correlationCgpa,
+        incomeRiskDistribution,
+        departmentRiskDistribution,
+        modelMetrics
       };
 
       res.json(stats);
     } catch (err) {
       res.status(500).json({ error: "Failed to compile EDA statistics" });
+    }
+  });
+
+  // GET Scikit-Learn Model Metrics
+  app.get("/api/model/metrics", (req, res) => {
+    try {
+      if (fs.existsSync(METRICS_PATH)) {
+        const metrics = JSON.parse(fs.readFileSync(METRICS_PATH, "utf8"));
+        return res.json(metrics);
+      }
+      res.status(404).json({ error: "ML metrics not generated yet" });
+    } catch (err) {
+      res.status(500).json({ error: "Failed to read metrics" });
+    }
+  });
+
+  // POST Retrain Scikit-Learn Model
+  app.post("/api/model/retrain", async (req, res) => {
+    try {
+      const resp = await fetch(`${ML_SERVICE_URL}/retrain`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ dbPath: DB_PATH }),
+      });
+      if (resp.ok) {
+        const data = await resp.json();
+        cleaningLogs.unshift({
+          id: Date.now().toString(),
+          timestamp: new Date().toISOString(),
+          type: "SYNC",
+          message: `Scikit-Learn RandomForestClassifier retrained successfully! Accuracy: ${data.metrics?.accuracy}%, F1: ${data.metrics?.f1Score}%.`,
+        });
+        return res.json(data);
+      }
+      res.status(500).json({ error: "Python ML service returned error on retrain" });
+    } catch (err: any) {
+      res.status(500).json({ error: err.message || "Failed to contact ML service" });
     }
   });
 

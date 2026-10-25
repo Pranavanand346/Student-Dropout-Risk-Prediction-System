@@ -302,6 +302,7 @@ export default function App() {
                   onTriggerSync={handleTriggerSync}
                   onImportDataset={handleImportDataset}
                   onResetDataset={handleResetDataset}
+                  onRetrainModel={fetchData}
                 />
               )}
             </motion.div>
@@ -316,11 +317,11 @@ export default function App() {
             <div className="bg-white p-0.5 rounded border border-amber-500/20">
               <img src={ascendraLogo} alt="Ascendra" className="h-5 w-auto object-contain" />
             </div>
-            <span>Ascendra Core • Pearson Correlation (r) & Multi-Factor Logistic Engine</span>
+            <span>Ascendra Core • Scikit-Learn Random Forest Pipeline & Pearson Correlation (r)</span>
           </div>
           <div className="text-[#D5C3B5] text-[10px] flex items-center gap-1.5 font-semibold font-mono">
-            <span>Engine: Gemini Retention Core & Node Backend</span>
-            <span className="h-2 w-2 bg-amber-500 rounded-full animate-ping" />
+            <span>Engine: Scikit-Learn 1.9.0 (Random Forest) & Node Backend</span>
+            <span className="h-2 w-2 bg-emerald-500 rounded-full animate-ping" />
           </div>
         </div>
       </footer>

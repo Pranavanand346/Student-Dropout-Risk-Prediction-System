@@ -66,6 +66,11 @@ export interface ModelMetrics {
   f1Score: number;
   confusionMatrix: ConfusionMatrix;
   featureWeights: FeatureWeight[];
+  modelName?: string;
+  algorithm?: string;
+  framework?: string;
+  trainedAt?: string;
+  testSamples?: number;
 }
 
 export interface EdaStats {

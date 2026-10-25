@@ -48,6 +48,7 @@ interface DataScienceWorkbenchProps {
   onTriggerSync: (dbUrl: string) => Promise<boolean>;
   onImportDataset?: (content: string, format: string) => Promise<boolean>;
   onResetDataset?: () => Promise<boolean>;
+  onRetrainModel?: () => Promise<void | boolean>;
 }
 
 export default function DataScienceWorkbench({ 
@@ -56,7 +57,8 @@ export default function DataScienceWorkbench({
   logs, 
   onTriggerSync,
   onImportDataset,
-  onResetDataset 
+  onResetDataset,
+  onRetrainModel 
 }: DataScienceWorkbenchProps) {
   const [selectedCorrelation, setSelectedCorrelation] = useState<"attendance" | "cgpa">("attendance");
   const [syncing, setSyncing] = useState(false);
@@ -220,6 +222,33 @@ export default function DataScienceWorkbench({
       setStatusMessage({ type: "success", text: "Database reset to 200-Student Benchmark Cohort." });
     }
     setResetting(false);
+  };
+
+  const [retraining, setRetraining] = useState(false);
+  const handleRetrain = async () => {
+    setRetraining(true);
+    try {
+      const res = await fetch("/api/model/retrain", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setStatusMessage({
+          type: "success",
+          text: `Scikit-Learn model successfully retrained! Accuracy: ${data.metrics?.accuracy}%, F1: ${data.metrics?.f1Score}%`
+        });
+        if (onRetrainModel) {
+          await onRetrainModel();
+        }
+      } else {
+        setStatusMessage({ type: "error", text: data.error || "Failed to retrain model" });
+      }
+    } catch (err: any) {
+      setStatusMessage({ type: "error", text: "Retrain error: " + err.message });
+    } finally {
+      setRetraining(false);
+    }
   };
 
   const getRiskColor = (level: string) => {
@@ -411,17 +440,33 @@ export default function DataScienceWorkbench({
         {/* MODEL EVALUATION METRICS CARD (5 cols) */}
         <div className="xl:col-span-5 bg-[#261912] border border-[#4F3529] backdrop-blur-xl rounded-2xl p-6 shadow-md flex flex-col justify-between text-[#F9F3EB]">
           <div>
-            <div className="flex items-center justify-between">
-              <h3 className="text-base font-bold text-[#F9F3EB] flex items-center gap-2">
-                <Cpu className="h-5 w-5 text-amber-500" />
-                Model Performance & Validation
-              </h3>
-              <span className="text-[10px] bg-emerald-950 text-emerald-300 border border-emerald-800 px-2 py-0.5 rounded-full font-mono font-bold">
-                Evaluated Live
-              </span>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 className="text-base font-bold text-[#F9F3EB] flex items-center gap-2">
+                  <Cpu className="h-5 w-5 text-amber-500" />
+                  Model Performance & Validation
+                </h3>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-[11px] text-amber-300 font-mono font-semibold">
+                    {metrics.algorithm || "Scikit-Learn Random Forest (120 Trees)"}
+                  </span>
+                  <span className="text-[9px] bg-[#34221A] text-emerald-300 border border-emerald-800/80 px-1.5 py-0.5 rounded-full font-mono font-bold">
+                    {metrics.framework || "scikit-learn 1.9.0"}
+                  </span>
+                </div>
+              </div>
+              <button
+                onClick={handleRetrain}
+                disabled={retraining}
+                className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-stone-950 text-xs font-bold rounded-xl flex items-center gap-1.5 transition disabled:opacity-50 cursor-pointer shadow-sm shadow-amber-500/20 self-start sm:self-auto shrink-0"
+                title="Retrain Random Forest classifier using scikit-learn on the active dataset"
+              >
+                <RefreshCw className={`h-3.5 w-3.5 ${retraining ? "animate-spin" : ""}`} />
+                {retraining ? "Retraining ML..." : "Retrain ML Model"}
+              </button>
             </div>
-            <p className="text-xs text-[#D5C3B5] mt-1">
-              Multi-factor weighted regression accuracy evaluated against active student dataset ({students.length} samples).
+            <p className="text-xs text-[#D5C3B5] mt-2">
+              Scikit-learn stratified train/test split (80/20) evaluated on held-out test cohort ({metrics.testSamples || 46} test samples out of {students.length} total students).
             </p>
 
             {/* METRICS GRID */}
@@ -448,7 +493,7 @@ export default function DataScienceWorkbench({
             <div className="mt-4 p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl">
               <p className="text-[10px] font-bold text-[#F9F3EB] uppercase tracking-wider mb-2 font-mono flex items-center justify-between">
                 <span>Confusion Matrix (Classification Grid)</span>
-                <span className="text-[#D5C3B5] font-normal">N = {students.length}</span>
+                <span className="text-[#D5C3B5] font-normal">Held-out Test Cohort (N = {metrics.testSamples || 46})</span>
               </p>
               <div className="grid grid-cols-2 gap-2 text-center text-xs font-mono">
                 <div className="p-2 bg-emerald-950/80 border border-emerald-800/80 rounded-lg">

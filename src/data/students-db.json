@@ -1,5 +1,25 @@
 [
   {
+    "id": "231",
+    "studentId": "ertt234",
+    "name": "try",
+    "email": "try@gmail.com",
+    "department": "Information Tech",
+    "academicYear": "Freshman",
+    "attendance": 78,
+    "internalMarks": 63,
+    "cgpa": 7.42,
+    "householdIncome": 150000,
+    "scholarship": false,
+    "scholarshipHistory": "None",
+    "engagement": "High",
+    "riskScore": 8,
+    "riskLevel": "Low",
+    "status": "Enrolled",
+    "createdAt": "2026-10-25T07:37:30.090Z",
+    "updatedAt": "2026-10-25T07:37:30.090Z"
+  },
+  {
     "id": "216",
     "studentId": "STU_HR_101",
     "name": "HighRisk Student 1",
