@@ -23,7 +23,7 @@ if (!fs.existsSync(dir)) {
 function ensureMlServiceRunning() {
   fetch(`${ML_SERVICE_URL}/health`).catch(() => {
     const pythonExe = "C:\\Users\\prana\\AppData\\Local\\Programs\\Python\\Python314\\python.exe";
-    const pyCmd = fs.existsSync(pythonExe) ? pythonExe : "py";
+    const pyCmd = fs.existsSync(pythonExe) ? pythonExe : "python3";
     const serviceScript = path.join(process.cwd(), "ml", "service.py");
     if (fs.existsSync(serviceScript)) {
       console.log("[ML Engine] Spawning Scikit-Learn Python service on port 5001...");
