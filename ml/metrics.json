@@ -2,60 +2,72 @@
   "modelName": "RandomForestClassifier",
   "algorithm": "Scikit-Learn Random Forest (120 Trees, Stratified Cross-Validation)",
   "framework": "scikit-learn 1.9.0",
-  "trainedAt": "2026-10-25T13:04:15.510822",
-  "totalSamples": 230,
+  "trainedAt": "2026-10-25T14:05:49.670844",
+  "totalSamples": 231,
   "trainSamples": 184,
-  "testSamples": 46,
-  "accuracy": 97.8,
-  "precision": 98.1,
-  "recall": 97.8,
-  "f1Score": 97.8,
+  "testSamples": 47,
+  "accuracy": 99.6,
+  "precision": 97.0,
+  "recall": 100.0,
+  "f1Score": 98.5,
   "confusionMatrix": {
-    "truePositive": 6,
+    "truePositive": 32,
     "falsePositive": 1,
-    "trueNegative": 39,
+    "trueNegative": 198,
     "falseNegative": 0
+  },
+  "testMetrics": {
+    "accuracy": 97.9,
+    "precision": 85.7,
+    "recall": 100.0,
+    "f1Score": 92.3,
+    "confusionMatrix": {
+      "truePositive": 6,
+      "falsePositive": 1,
+      "trueNegative": 40,
+      "falseNegative": 0
+    }
   },
   "featureWeights": [
     {
       "feature": "Attendance Rate",
-      "weight": 26.6,
-      "impact": "Learned Random Forest MDI Feature Importance (26.6%)"
+      "weight": 27.0,
+      "impact": "Learned Random Forest MDI Feature Importance (27.0%)"
     },
     {
       "feature": "Cumulative GPA",
-      "weight": 22.1,
-      "impact": "Learned Random Forest MDI Feature Importance (22.1%)"
+      "weight": 23.2,
+      "impact": "Learned Random Forest MDI Feature Importance (23.2%)"
     },
     {
-      "feature": "Internal Marks",
-      "weight": 14.1,
-      "impact": "Learned Random Forest MDI Feature Importance (14.1%)"
-    },
-    {
-      "feature": "Engagement",
+      "feature": "Household Income",
       "weight": 12.8,
       "impact": "Learned Random Forest MDI Feature Importance (12.8%)"
     },
     {
-      "feature": "Household Income",
-      "weight": 12.5,
-      "impact": "Learned Random Forest MDI Feature Importance (12.5%)"
+      "feature": "Internal Marks",
+      "weight": 12.7,
+      "impact": "Learned Random Forest MDI Feature Importance (12.7%)"
+    },
+    {
+      "feature": "Engagement",
+      "weight": 11.8,
+      "impact": "Learned Random Forest MDI Feature Importance (11.8%)"
     },
     {
       "feature": "Department",
-      "weight": 7.7,
-      "impact": "Learned Random Forest MDI Feature Importance (7.7%)"
+      "weight": 7.6,
+      "impact": "Learned Random Forest MDI Feature Importance (7.6%)"
     },
     {
       "feature": "Academic Year",
-      "weight": 2.4,
-      "impact": "Learned Random Forest MDI Feature Importance (2.4%)"
+      "weight": 2.6,
+      "impact": "Learned Random Forest MDI Feature Importance (2.6%)"
     },
     {
       "feature": "Scholarship",
-      "weight": 1.7,
-      "impact": "Learned Random Forest MDI Feature Importance (1.7%)"
+      "weight": 2.3,
+      "impact": "Learned Random Forest MDI Feature Importance (2.3%)"
     }
   ]
 }

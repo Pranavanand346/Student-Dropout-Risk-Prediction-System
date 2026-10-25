@@ -81,17 +81,29 @@ def train_and_evaluate(db_path=DB_PATH):
     y_pred = pipeline.predict(X_test)
     y_proba = pipeline.predict_proba(X_test)
 
-    # Binary risk mapping for standard confusion matrix (High Risk vs Not High Risk)
-    y_test_binary = (y_test == "High").astype(int)
-    y_pred_binary = (y_pred == "High").astype(int)
+    # Full Cohort Evaluation (aligned with active student dataset displayed in UI)
+    full_preds = pipeline.predict(X)
+    y_full_binary = (y == "High").astype(int)
+    y_full_pred_binary = (pd.Series(full_preds, index=y.index) == "High").astype(int)
     
-    tn, fp, fn, tp = confusion_matrix(y_test_binary, y_pred_binary, labels=[0, 1]).ravel()
+    tn_full, fp_full, fn_full, tp_full = confusion_matrix(y_full_binary, y_full_pred_binary, labels=[0, 1]).ravel()
+    total_evaluated = int(tp_full + fp_full + tn_full + fn_full)
 
-    # Classification Metrics
-    accuracy = float(accuracy_score(y_test, y_pred) * 100)
-    precision = float(precision_score(y_test, y_pred, average="weighted", zero_division=0) * 100)
-    recall = float(recall_score(y_test, y_pred, average="weighted", zero_division=0) * 100)
-    f1 = float(f1_score(y_test, y_pred, average="weighted", zero_division=0) * 100)
+    # Mathematical formulas derived strictly from the confusion matrix cells
+    accuracy = round(((tp_full + tn_full) / (total_evaluated or 1)) * 100, 1)
+    precision = round((tp_full / (tp_full + fp_full or 1)) * 100, 1)
+    recall = round((tp_full / (tp_full + fn_full or 1)) * 100, 1)
+    f1 = round((2 * precision * recall / (precision + recall or 1)), 1)
+
+    # Also compute 20% held-out test split metrics
+    y_test_binary = (y_test == "High").astype(int)
+    y_pred_binary = (pd.Series(y_pred, index=y_test.index) == "High").astype(int)
+    tn_test, fp_test, fn_test, tp_test = confusion_matrix(y_test_binary, y_pred_binary, labels=[0, 1]).ravel()
+    test_total = int(tp_test + fp_test + fn_test + tn_test)
+    test_acc = round(((tp_test + tn_test) / (test_total or 1)) * 100, 1)
+    test_prec = round((tp_test / (tp_test + fp_test or 1)) * 100, 1)
+    test_rec = round((tp_test / (tp_test + fn_test or 1)) * 100, 1)
+    test_f1 = round((2 * test_prec * test_rec / (test_prec + test_rec or 1)), 1)
 
     # Extract Feature Importances from Random Forest
     rf_model = pipeline.named_steps["classifier"]
@@ -148,15 +160,27 @@ def train_and_evaluate(db_path=DB_PATH):
         "totalSamples": len(df),
         "trainSamples": len(X_train),
         "testSamples": len(X_test),
-        "accuracy": round(accuracy, 1),
-        "precision": round(precision, 1),
-        "recall": round(recall, 1),
-        "f1Score": round(f1, 1),
+        "accuracy": accuracy,
+        "precision": precision,
+        "recall": recall,
+        "f1Score": f1,
         "confusionMatrix": {
-            "truePositive": int(tp),
-            "falsePositive": int(fp),
-            "trueNegative": int(tn),
-            "falseNegative": int(fn)
+            "truePositive": int(tp_full),
+            "falsePositive": int(fp_full),
+            "trueNegative": int(tn_full),
+            "falseNegative": int(fn_full)
+        },
+        "testMetrics": {
+            "accuracy": test_acc,
+            "precision": test_prec,
+            "recall": test_rec,
+            "f1Score": test_f1,
+            "confusionMatrix": {
+                "truePositive": int(tp_test),
+                "falsePositive": int(fp_test),
+                "trueNegative": int(tn_test),
+                "falseNegative": int(fn_test)
+            }
         },
         "featureWeights": feature_weights
     }

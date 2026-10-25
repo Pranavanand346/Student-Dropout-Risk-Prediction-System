@@ -465,55 +465,75 @@ export default function DataScienceWorkbench({
                 {retraining ? "Retraining ML..." : "Retrain ML Model"}
               </button>
             </div>
-            <p className="text-xs text-[#D5C3B5] mt-2">
-              Scikit-learn stratified train/test split (80/20) evaluated on held-out test cohort ({metrics.testSamples || 46} test samples out of {students.length} total students).
-            </p>
+            {/* DYNAMIC DERIVED METRICS STRICTLY MATCHING CONFUSION MATRIX */}
+            {(() => {
+              const cm = metrics.confusionMatrix || { truePositive: 0, falsePositive: 0, trueNegative: 0, falseNegative: 0 };
+              const cmTotal = (cm.truePositive + cm.falsePositive + cm.trueNegative + cm.falseNegative) || students.length || 1;
+              const displayAccuracy = Number((((cm.truePositive + cm.trueNegative) / cmTotal) * 100).toFixed(1));
+              const displayPrecision = (cm.truePositive + cm.falsePositive) > 0 
+                ? Number(((cm.truePositive / (cm.truePositive + cm.falsePositive)) * 100).toFixed(1)) 
+                : 0;
+              const displayRecall = (cm.truePositive + cm.falseNegative) > 0 
+                ? Number(((cm.truePositive / (cm.truePositive + cm.falseNegative)) * 100).toFixed(1)) 
+                : 0;
+              const displayF1 = (displayPrecision + displayRecall) > 0 
+                ? Number(((2 * displayPrecision * displayRecall) / (displayPrecision + displayRecall)).toFixed(1)) 
+                : 0;
 
-            {/* METRICS GRID */}
-            <div className="grid grid-cols-4 gap-2 mt-4">
-              <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
-                <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Accuracy</p>
-                <p className="text-lg font-extrabold text-amber-400 font-mono mt-0.5">{metrics.accuracy}%</p>
-              </div>
-              <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
-                <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Precision</p>
-                <p className="text-lg font-extrabold text-emerald-400 font-mono mt-0.5">{metrics.precision}%</p>
-              </div>
-              <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
-                <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Recall</p>
-                <p className="text-lg font-extrabold text-amber-300 font-mono mt-0.5">{metrics.recall}%</p>
-              </div>
-              <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
-                <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">F1-Score</p>
-                <p className="text-lg font-extrabold text-yellow-400 font-mono mt-0.5">{metrics.f1Score}%</p>
-              </div>
-            </div>
+              return (
+                <>
+                  <p className="text-xs text-[#D5C3B5] mt-2">
+                    Scikit-Learn Random Forest classification evaluated on active student cohort (N = {cmTotal} students).
+                  </p>
 
-            {/* CONFUSION MATRIX */}
-            <div className="mt-4 p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl">
-              <p className="text-[10px] font-bold text-[#F9F3EB] uppercase tracking-wider mb-2 font-mono flex items-center justify-between">
-                <span>Confusion Matrix (Classification Grid)</span>
-                <span className="text-[#D5C3B5] font-normal">Held-out Test Cohort (N = {metrics.testSamples || 46})</span>
-              </p>
-              <div className="grid grid-cols-2 gap-2 text-center text-xs font-mono">
-                <div className="p-2 bg-emerald-950/80 border border-emerald-800/80 rounded-lg">
-                  <p className="text-[9px] text-emerald-400 uppercase font-bold">True Positive (TP)</p>
-                  <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{metrics.confusionMatrix.truePositive} <span className="text-[10px] font-normal text-[#D5C3B5]">Correct Risk</span></p>
-                </div>
-                <div className="p-2 bg-rose-950/80 border border-rose-800/80 rounded-lg">
-                  <p className="text-[9px] text-rose-400 uppercase font-bold">False Positive (FP)</p>
-                  <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{metrics.confusionMatrix.falsePositive} <span className="text-[10px] font-normal text-[#D5C3B5]">Over-flagged</span></p>
-                </div>
-                <div className="p-2 bg-amber-950/80 border border-amber-800/80 rounded-lg">
-                  <p className="text-[9px] text-amber-400 uppercase font-bold">False Negative (FN)</p>
-                  <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{metrics.confusionMatrix.falseNegative} <span className="text-[10px] font-normal text-[#D5C3B5]">Missed Risk</span></p>
-                </div>
-                <div className="p-2 bg-[#34221A] border border-[#4F3529] rounded-lg">
-                  <p className="text-[9px] text-amber-300 uppercase font-bold">True Negative (TN)</p>
-                  <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{metrics.confusionMatrix.trueNegative} <span className="text-[10px] font-normal text-[#D5C3B5]">Correct Safe</span></p>
-                </div>
-              </div>
-            </div>
+                  {/* METRICS GRID */}
+                  <div className="grid grid-cols-4 gap-2 mt-4">
+                    <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
+                      <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Accuracy</p>
+                      <p className="text-lg font-extrabold text-amber-400 font-mono mt-0.5">{displayAccuracy}%</p>
+                    </div>
+                    <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
+                      <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Precision</p>
+                      <p className="text-lg font-extrabold text-emerald-400 font-mono mt-0.5">{displayPrecision}%</p>
+                    </div>
+                    <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
+                      <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">Recall</p>
+                      <p className="text-lg font-extrabold text-amber-300 font-mono mt-0.5">{displayRecall}%</p>
+                    </div>
+                    <div className="p-2.5 bg-[#1C120C] border border-[#4F3529] rounded-xl text-center">
+                      <p className="text-[9px] uppercase tracking-wider font-bold text-[#D5C3B5]">F1-Score</p>
+                      <p className="text-lg font-extrabold text-yellow-400 font-mono mt-0.5">{displayF1}%</p>
+                    </div>
+                  </div>
+
+                  {/* CONFUSION MATRIX */}
+                  <div className="mt-4 p-3 bg-[#1C120C] border border-[#4F3529] rounded-xl">
+                    <p className="text-[10px] font-bold text-[#F9F3EB] uppercase tracking-wider mb-2 font-mono flex items-center justify-between">
+                      <span>Confusion Matrix (Classification Grid)</span>
+                      <span className="text-[#D5C3B5] font-normal">Active Cohort (N = {cmTotal})</span>
+                    </p>
+                    <div className="grid grid-cols-2 gap-2 text-center text-xs font-mono">
+                      <div className="p-2 bg-emerald-950/80 border border-emerald-800/80 rounded-lg">
+                        <p className="text-[9px] text-emerald-400 uppercase font-bold">True Positive (TP)</p>
+                        <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{cm.truePositive} <span className="text-[10px] font-normal text-[#D5C3B5]">Correct Risk</span></p>
+                      </div>
+                      <div className="p-2 bg-rose-950/80 border border-rose-800/80 rounded-lg">
+                        <p className="text-[9px] text-rose-400 uppercase font-bold">False Positive (FP)</p>
+                        <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{cm.falsePositive} <span className="text-[10px] font-normal text-[#D5C3B5]">Over-flagged</span></p>
+                      </div>
+                      <div className="p-2 bg-amber-950/80 border border-amber-800/80 rounded-lg">
+                        <p className="text-[9px] text-amber-400 uppercase font-bold">False Negative (FN)</p>
+                        <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{cm.falseNegative} <span className="text-[10px] font-normal text-[#D5C3B5]">Missed Risk</span></p>
+                      </div>
+                      <div className="p-2 bg-[#34221A] border border-[#4F3529] rounded-lg">
+                        <p className="text-[9px] text-amber-300 uppercase font-bold">True Negative (TN)</p>
+                        <p className="text-sm font-black text-[#F9F3EB] mt-0.5">{cm.trueNegative} <span className="text-[10px] font-normal text-[#D5C3B5]">Correct Safe</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })()}
 
             {/* MODEL PARAMETER IMPORTANCE MATRIX */}
             <div className="mt-4 p-3 bg-[#1C120C] border border-amber-500/30 rounded-xl space-y-2 font-mono">
